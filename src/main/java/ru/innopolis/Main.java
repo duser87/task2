@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        ArrayList<Product> products = new ArrayList<Product>();
+        ArrayList<Product> products = new ArrayList<>();
 
         products.add(new Product(1, "This is the No.1 product", 100L, 20L));
 
