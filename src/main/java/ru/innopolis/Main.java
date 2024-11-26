@@ -1,16 +1,26 @@
 package ru.innopolis;
 
 
+import java.util.ArrayList;
+
 public class Main {
+
     public static void main(String[] args) {
 
-        Product product1 = new Product(1, "This is the No.1 product", 100L, 20L);
 
-        Product product2 = new Product(2, "This is the No.2 product", 5L, 30L);
+        ArrayList<Product> products = new ArrayList<Product>();
 
-        System.out.println(product1.toString());
+        products.add(new Product(1, "This is the No.1 product", 100L, 20L));
 
-        System.out.println(product2.toString());
+        products.add(new Product(2, "This is the No.2 product", 10L, 30L));
+
+        products.add(new Product(3, "This is the No.3 product", 20L, 40L));
+
+        for(Product p: products){
+
+            System.out.println(p.toString());
+
+        }
 
     }
 }
